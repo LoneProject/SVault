@@ -13,9 +13,11 @@ tasks.jar {
 group = "org.lone64.vault"
 
 repositories {
+    maven { url = 'https://repo.skriptlang.org/releases' }
     maven { url = "https://repo.loneproject.org/repository/maven-public/" }
 }
 
 dependencies {
     compileOnly "org.spigotmc:spigot-api:1.12.2-R0.1"
+    implementation "com.github.SkriptLang:Skript:2.7.0-beta3"
 }
