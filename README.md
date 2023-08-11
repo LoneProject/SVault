@@ -31,7 +31,7 @@ dependencies {
 ```
 
 Use API In Maven
-```pom
+```xml
 <repositories>
     <repository>
         <url>https://repo.loneproject.org/repository/maven-public/</url>
