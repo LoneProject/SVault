@@ -49,6 +49,37 @@ Use API In Maven
 </dependencies>
 ```
 
+```java
+public class VaultUtil {
+
+    private final Economy economy;
+
+    public VaultUtil() {
+        this.economy = new AbstractEconomy();
+    }
+
+    public boolean set(OfflinePlayer player, double amount) {
+        EconomyResponse response = this.economy.setAmount(player, amount);
+        return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
+    }
+
+    public boolean add(OfflinePlayer player, double amount) {
+        EconomyResponse response = this.economy.addAmount(player, amount);
+        return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
+    }
+
+    public boolean subtract(OfflinePlayer player, double amount) {
+        EconomyResponse response = this.economy.subAmount(player, amount);
+        return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
+    }
+
+    public double get(OfflinePlayer player) {
+        return this.economy.getAmount(player);
+    }
+
+}
+```
+
 # 스크립트 API
 ```skript
 set player's money to 1000
