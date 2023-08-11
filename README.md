@@ -25,6 +25,7 @@ Use API In Gradle
 repositories {
     maven { url "https://repo.loneproject.org/repository/maven-public/" }
 }
+
 dependencies {
     compileOnly "org.lone64:Vault:1.0.0-beta"
 }
@@ -34,9 +35,11 @@ Use API In Maven
 ```xml
 <repositories>
     <repository>
+        <id>LoneProject</id>
         <url>https://repo.loneproject.org/repository/maven-public/</url>
     </repository>
 </repositories>
+
 <dependencies>
     <dependency>
         <groupId>org.lone64</groupId>
