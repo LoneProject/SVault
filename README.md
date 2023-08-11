@@ -48,3 +48,14 @@ Use API In Maven
     </dependency>
 </dependencies>
 ```
+
+# 스크립트 API
+```skript
+set player's money to 1000
+add 1000 to player's money
+subtract 1000 from player's money
+
+set money of player to 1000
+add 1000 to money of player
+subtract 1000 from money of player
+```
