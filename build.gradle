@@ -1,0 +1,21 @@
+plugins {
+    id "java"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}
+
+tasks.jar {
+    archiveFileName.set("SVault.jar")
+}
+
+group = "org.lone64.vault"
+
+repositories {
+    maven { url = "https://repo.loneproject.org/repository/maven-public/"; allowInsecureProtocol = true }
+}
+
+dependencies {
+    compileOnly "org.spigotmc:spigot-api:1.12.2-R0.1"
+}
