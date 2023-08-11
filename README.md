@@ -27,7 +27,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly "org.lone64:Vault:1.0.0-beta"
+    compileOnly "org.lone64:Vault:1.0.0-beta1"
 }
 ```
 
