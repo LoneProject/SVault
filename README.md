@@ -56,6 +56,30 @@ Use API In Maven
 </dependencies>
 ```
 
+MainPlugin.java
+```java
+public final class Main extends JavaPlugin {
+
+    private VaultUtil util;
+
+    @Override
+    public void onEnable() {
+        this.util = new VaultUtil();
+    }
+
+    @Override
+    public void onDisable() {
+        
+    }
+
+    public VaultUtil getUtil() {
+        return util;
+    }
+
+}
+```
+
+VaultUtil.java
 ```java
 public class VaultUtil {
 
