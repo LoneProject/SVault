@@ -58,7 +58,7 @@ Use API In Maven
 
 MainPlugin.java
 ```java
-public final class Main extends JavaPlugin {
+public final class MainPlugin extends JavaPlugin {
 
     private VaultUtil util;
 
