@@ -1,5 +1,5 @@
 # 플러그인 공지
-플러그인 API로 사용하실 때 반드시 `plugin.yml`에 아래 텍스트를 추가해주세요.
+플러그인 API로 사용하실 때 반드시 `plugin.yml`에 아래 텍스트를 추가해주세요.1
 ```yaml
 depend:
   - SVault
