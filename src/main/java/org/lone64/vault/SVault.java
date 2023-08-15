@@ -21,7 +21,7 @@ public final class SVault extends JavaPlugin {
         if (this.isSkript()) {
             try {
                 this.addon = Skript.registerAddon(this);
-                this.addon.loadClasses("org.lone64", "skript");
+                this.addon.loadClasses("org.lone64.vault", "skript");
             } catch (Exception ignored) { }
         }
     }
