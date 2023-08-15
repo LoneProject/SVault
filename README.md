@@ -28,6 +28,8 @@ depend:
 # 플러그인 설정파일
 `해당 플러그인의 설정파일은 존재하지 않습니다.`
 
+<br>
+
 # 플러그인 API
 Use API In Gradle
 ```groovy
@@ -112,6 +114,8 @@ public class VaultUtil {
 
 }
 ```
+
+<br>
 
 # 스크립트 API
 ```skript
