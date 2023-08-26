@@ -38,7 +38,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly "org.lone64:Vault:1.0.1-alpha"
+    compileOnly "org.lone64:api-vault:1.0.2a2"
 }
 ```
 
@@ -54,8 +54,8 @@ Use API In Maven
 <dependencies>
     <dependency>
         <groupId>org.lone64</groupId>
-        <artifactId>Vault</artifactId>
-        <version>1.0.1-alpha</version>
+        <artifactId>api-vault</artifactId>
+        <version>1.0.2a2</version>
     </dependency>
 </dependencies>
 ```
