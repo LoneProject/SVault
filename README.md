@@ -60,59 +60,32 @@ Use API In Maven
 </dependencies>
 ```
 
-MainPlugin.java
-```java
-public final class MainPlugin extends JavaPlugin {
-
-    private VaultUtil util;
-
-    @Override
-    public void onEnable() {
-        this.util = new VaultUtil();
-    }
-
-    @Override
-    public void onDisable() {
-        
-    }
-
-    public VaultUtil getUtil() {
-        return util;
-    }
-
-}
-```
-
 VaultUtil.java
 ```java
 public class VaultUtil {
 
-    private final Economy economy;
-
-    public VaultUtil() {
-        this.economy = new AbstractEconomy();
-    }
+    private static final Economy economy = new AbstractEconomy();
 
     // 플레이어의 소지금을 설정하는 코드
-    public boolean set(OfflinePlayer player, double amount) {
+    public static boolean set(OfflinePlayer player, double amount) {
         EconomyResponse response = this.economy.setAmount(player, amount);
         return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
     }
 
     // 플레이어의 소지금에 추가하는 코드
-    public boolean add(OfflinePlayer player, double amount) {
+    public static boolean add(OfflinePlayer player, double amount) {
         EconomyResponse response = this.economy.addAmount(player, amount);
         return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
     }
 
     // 플레이어의 소지금에서 차감하는 코드
-    public boolean subtract(OfflinePlayer player, double amount) {
+    public static boolean subtract(OfflinePlayer player, double amount) {
         EconomyResponse response = this.economy.subAmount(player, amount);
         return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
     }
 
     // 플레이어의 소지금을 가져오는 코드
-    public double get(OfflinePlayer player) {
+    public static double get(OfflinePlayer player) {
         return this.economy.getAmount(player);
     }
 
