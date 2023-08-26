@@ -1,6 +1,6 @@
 name: SVault
 main: org.lone64.vault.SVault
 author: lone64
-version: 1.0.1
+version: 1.0.2
 api-version: '1.13'
 description: 경제 시스템 플러그인
