@@ -68,25 +68,25 @@ public class VaultUtil {
 
     // 플레이어의 소지금을 설정하는 코드
     public static boolean set(OfflinePlayer player, double amount) {
-        EconomyResponse response = this.economy.setAmount(player, amount);
+        EconomyResponse response = economy.setAmount(player, amount);
         return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
     }
 
     // 플레이어의 소지금에 추가하는 코드
     public static boolean add(OfflinePlayer player, double amount) {
-        EconomyResponse response = this.economy.addAmount(player, amount);
+        EconomyResponse response = economy.addAmount(player, amount);
         return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
     }
 
     // 플레이어의 소지금에서 차감하는 코드
     public static boolean subtract(OfflinePlayer player, double amount) {
-        EconomyResponse response = this.economy.subAmount(player, amount);
+        EconomyResponse response = economy.subAmount(player, amount);
         return response.getType().equals(EconomyResponse.ResponseType.SUCCESS);
     }
 
     // 플레이어의 소지금을 가져오는 코드
     public static double get(OfflinePlayer player) {
-        return this.economy.getAmount(player);
+        return economy.getAmount(player);
     }
 
 }
