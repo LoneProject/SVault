@@ -47,7 +47,7 @@ Use API In Maven
 <repositories>
     <repository>
         <id>LoneProject</id>
-        <url>https://repo.loneproject.org/repository/maven-public/</url>
+        <url>https://nexus.lone64.org:8081/repository/maven-public/</url>
     </repository>
 </repositories>
 
