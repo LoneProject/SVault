@@ -34,7 +34,7 @@ depend:
 Use API In Gradle
 ```groovy
 repositories {
-    maven { url "https://nexus.lone64.org:8081/repository/maven-public/" }
+    maven { url "http://repository.lone64.org:8081/repository/maven-public/" }
 }
 
 dependencies {
@@ -47,7 +47,7 @@ Use API In Maven
 <repositories>
     <repository>
         <id>LoneProject</id>
-        <url>https://nexus.lone64.org:8081/repository/maven-public/</url>
+        <url>http://repository.lone64.org:8081/repository/maven-public/</url>
     </repository>
 </repositories>
 
