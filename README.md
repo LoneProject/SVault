@@ -34,30 +34,12 @@ depend:
 Use API In Gradle
 ```groovy
 repositories {
-    maven { url "http://repository.lone64.org:8081/repository/maven-public/" }
+    maven { url "http://repository.lone64.org:8081/repository/maven-public/"; allowInsecureProtocol = true }
 }
 
 dependencies {
     compileOnly "org.lone64:api-vault:1.0.2a2"
 }
-```
-
-Use API In Maven
-```xml
-<repositories>
-    <repository>
-        <id>LoneProject</id>
-        <url>http://repository.lone64.org:8081/repository/maven-public/</url>
-    </repository>
-</repositories>
-
-<dependencies>
-    <dependency>
-        <groupId>org.lone64</groupId>
-        <artifactId>api-vault</artifactId>
-        <version>1.0.2a2</version>
-    </dependency>
-</dependencies>
 ```
 
 VaultUtil.java
