@@ -14,7 +14,7 @@ group = "org.lone64.vault"
 
 repositories {
     maven { url = 'https://repo.skriptlang.org/releases' }
-    maven { url = "https://repo.loneproject.org/repository/maven-public/" }
+    maven { url = "https://repo.lone64.org/repository/maven-public/" }
 }
 
 dependencies {
