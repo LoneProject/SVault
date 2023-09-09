@@ -18,6 +18,6 @@ repositories {
 }
 
 dependencies {
-    compileOnly "org.spigotmc:spigot-api:1.12.2-R0.1"
+    compileOnly "org.spigotmc:spigot-api:R0.1:1.12.2"
     implementation "com.github.SkriptLang:Skript:2.7.0-beta3"
 }
