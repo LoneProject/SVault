@@ -5,6 +5,7 @@ import ch.njol.skript.SkriptAddon;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.lone64.vault.data.StatsManager;
 import org.lone64.vault.database.impl.SQLiteLoader;
+import org.lone64.vault.listener.PlayerListener;
 
 import java.io.File;
 import java.util.Objects;
@@ -27,12 +28,15 @@ public final class SVault extends JavaPlugin {
     @Override
     public void onEnable() {
         statsManager = new StatsManager().loadAll(this.loader);
+
         if (this.isSkript()) {
             try {
                 this.addon = Skript.registerAddon(this);
                 this.addon.loadClasses("org.lone64.vault", "skript");
             } catch (Exception ignored) { }
         }
+
+        getServer().getPluginManager().registerEvents(new PlayerListener(), this);
     }
 
     @Override
