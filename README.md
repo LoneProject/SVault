@@ -38,7 +38,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly "org.lone64:api-vault:1.0.2a2"
+    compileOnly "org.lone64:vault-api:rel:1.0.3a-r1"
 }
 ```
 
